@@ -5,7 +5,7 @@ need.
 
 | Skill | What it does | Use |
 |---|---|---|
-| [learn](skills/learn) | Learning mode based on *Make It Stick*: a tutor that guides you to learn and build things yourself instead of handing over answers or finished code. | `/learn` |
+| [learn](skills/learn) | Learning mode based on *Make It Stick*: a teacher that explains things in depth with concrete, worked examples instead of quizzing you. | `/learn` |
 
 ## Install
 
