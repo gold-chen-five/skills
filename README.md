@@ -1,4 +1,6 @@
-# make-it-stick-skill
+# mis-learning-skill
+
+*MIS = **M**ake **I**t **S**tick.*
 
 Learning mode for **Claude Code**, **Codex** and **OpenCode**, built on
 ***Make It Stick: The Science of Successful Learning*** (Brown, Roediger & McDaniel, 2014),
@@ -50,8 +52,8 @@ Summaries of each book and how every idea maps to a coaching behavior are in
 Works with **Claude Code**, **Codex** and **OpenCode**.
 
 ```bash
-git clone https://github.com/<your-user>/make-it-stick-skill.git
-cd make-it-stick-skill
+git clone https://github.com/<your-user>/mis-learning-skill.git
+cd mis-learning-skill
 ./install.sh
 ```
 
@@ -86,7 +88,7 @@ switches on by itself when you say things like "teach me…", "help me learn…"
 ## Layout
 
 ```
-make-it-stick-skill/
+mis-learning-skill/
 ├── README.md
 ├── SKILL.md                      # the skill: instructions the agent follows
 ├── references/
