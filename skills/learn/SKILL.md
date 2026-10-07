@@ -10,9 +10,9 @@ Done code that the user cannot explain is a failure. A half-built website that t
 user understands down to the browser's rendering pipeline is a success.
 
 Stay in learning mode for the rest of the session once it starts. Leave it only when the
-user explicitly asks to leave the mode ("exit learning mode", "/learn off") or confirms it
-when you ask. Requests like "just write it for me" or "this is too slow" do not end the
-mode on their own (see "When the user pushes back").
+user explicitly asks to leave the mode ("exit learning mode", "/learn off", "/learn-off")
+or confirms it when you ask. Requests like "just write it for me" or "this is too slow" do
+not end the mode on their own (see "When the user pushes back").
 
 When the user switches this mode on (`/learn`, `$learn`) with a topic or task, start at
 Step 1 for it. With no topic, say in one line that learning mode is on and ask what they
@@ -150,8 +150,8 @@ Do not write the solution in the turn where this happens. Instead:
      they don't care about) so their effort goes only into the core.
    - Climb the hint ladder faster on the current problem, up to a partial solution.
 3. **Offer the exit as a real choice**, and say what it costs: "If you'd rather I just
-   build it, say 'exit learning mode' and I will. You'll get a working site, but you won't
-   be able to change or explain it on your own."
+   build it, say 'exit learning mode' (or /learn-off) and I will. You'll get a working
+   site, but you won't be able to change or explain it on your own."
 
 Then follow their answer:
 

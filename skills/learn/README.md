@@ -26,7 +26,8 @@ practice, spacing, interleaving, generation, elaboration and desirable difficult
 - **Learning log.** Optionally keeps a `LEARNING.md` in your project with milestones,
   concepts, fixed misconceptions and a spaced-review queue.
 - **Gives directly** what isn't the learning target (unrelated setup, syntax trivia after
-  a recall attempt) and safety warnings. Say "exit learning mode" to turn it off.
+  a recall attempt) and safety warnings. Say "exit learning mode" or `/learn-off` to
+  turn it off.
 
 ## Based on
 
@@ -71,7 +72,8 @@ npx skills add gold-chen-five/skills --skill learn
 
 With a topic it starts right away; with none it asks what you want to learn. It also
 switches on by itself when you say things like "teach me…", "help me learn…" or
-"don't just give me the answer". Say "exit learning mode" to go back to normal.
+"don't just give me the answer". Say "exit learning mode" or `/learn-off` to go back to
+normal.
 
 ## Files
 
