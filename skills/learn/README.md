@@ -51,6 +51,8 @@ Summaries of each book and how every idea maps to a coaching behavior are in
 
 ```bash
 bunx skills add gold-chen-five/skills --skill learn
+# or
+npx skills add gold-chen-five/skills --skill learn
 ```
 
 | Tool | Switch on with |

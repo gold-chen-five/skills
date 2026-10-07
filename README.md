@@ -11,10 +11,11 @@ need.
 
 ```bash
 bunx skills add gold-chen-five/skills --skill learn
+# or
+npx skills add gold-chen-five/skills --skill learn
 ```
 
 That's it. It asks which tools to install for; pick Claude Code, Codex and/or OpenCode.
-(`npx` works too.)
 
 | Tool | Switch on with |
 |---|---|
@@ -22,7 +23,8 @@ That's it. It asks which tools to install for; pick Claude Code, Codex and/or Op
 | Codex | `$learn` (Codex has no custom slash commands) |
 | OpenCode | `/learn` |
 
-Update with `bunx skills update`, remove with `bunx skills remove learn`.
+Update with `bunx skills update` (or `npx skills update`), remove with
+`bunx skills remove learn` (or `npx skills remove learn`).
 
 ## Adding a skill
 
