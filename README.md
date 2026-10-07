@@ -1,6 +1,6 @@
 # learning
 
-A Claude Code skill that turns Claude into a tutor that guides you to learn and build
+An agent skill for Claude Code, Codex and OpenCode that turns your coding assistant into a tutor that guides you to learn and build
 things yourself, instead of handing over answers or finished code. Ask it to help you
 build a website and it will map out the path, have you write every line, and coach you
 with questions and feedback.
@@ -36,25 +36,50 @@ Summaries of each book and how every idea maps to a coaching behavior are in
 
 ## Install
 
-Copy this folder to your personal skills directory (all projects):
+Works with **Claude Code**, **Codex** and **OpenCode**.
 
 ```bash
-cp -r learning ~/.claude/skills/learning
+git clone https://github.com/<your-user>/learning.git
+cd learning
+./install.sh
 ```
 
-or to a single project's `.claude/skills/learning`.
+This installs for all three tools. To pick only some, pass flags:
+
+```bash
+./install.sh --claude              # Claude Code only
+./install.sh --codex --opencode    # Codex and OpenCode
+./install.sh --uninstall           # remove from all three
+```
+
+| Tool | Installed to | Switch on with |
+|---|---|---|
+| Claude Code | `~/.claude/skills/learn/` | `/learn` |
+| Codex | `~/.agents/skills/learn/` | `$learn` (Codex has no custom slash commands; `/skills` also lists it) |
+| OpenCode | `~/.agents/skills/learn/` + `~/.config/opencode/commands/learn.md` | `/learn` |
+
+Restart the tool after installing. To update, `git pull` and run `./install.sh` again.
 
 ## Use
 
-Type `/learning`, or just ask: "teach me…", "help me learn…", "guide me to build…",
-"don't just give me the answer".
+```
+/learn build a personal website
+/learn how recursion works
+/learn
+```
+
+With a topic it starts right away; with none it asks what you want to learn. It also
+switches on by itself when you say things like "teach me…", "help me learn…" or
+"don't just give me the answer". Say "exit coach mode" to go back to normal.
 
 ## Layout
 
 ```
 learning/
 ├── README.md
-├── SKILL.md                      # instructions Claude follows
-└── references/
-    └── learning-science.md       # book summaries and the research behind each rule
+├── SKILL.md                      # the skill: instructions the agent follows
+├── references/
+│   └── learning-science.md       # book summaries and the research behind each rule
+├── opencode/commands/learn.md    # /learn command for OpenCode
+└── install.sh
 ```
