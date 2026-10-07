@@ -1,9 +1,14 @@
-# learning
+# make-it-stick-skill
 
-An agent skill for Claude Code, Codex and OpenCode that turns your coding assistant into a tutor that guides you to learn and build
-things yourself, instead of handing over answers or finished code. Ask it to help you
-build a website and it will map out the path, have you write every line, and coach you
-with questions and feedback.
+Learning mode for **Claude Code**, **Codex** and **OpenCode**, built on
+***Make It Stick: The Science of Successful Learning*** (Brown, Roediger & McDaniel, 2014),
+the book most often called the gold standard on how people learn.
+
+Type `/learn` and your coding assistant becomes a tutor: it guides you to learn and build
+things yourself instead of handing over answers or finished code. Ask it to help you build
+a website and it will map out the path, have you write every line, and coach you with
+questions and feedback, using the techniques the book shows actually work: retrieval
+practice, spacing, interleaving, generation, elaboration and desirable difficulties.
 
 ## What it does
 
@@ -23,9 +28,15 @@ with questions and feedback.
 
 ## Based on
 
-- *Make It Stick* by Peter C. Brown, Henry L. Roediger III and Mark A. McDaniel:
-  retrieval practice, spacing, interleaving, generation, elaboration, calibration,
-  desirable difficulties.
+The core is ***Make It Stick*** by Peter C. Brown, Henry L. Roediger III and
+Mark A. McDaniel. Roediger and McDaniel are cognitive scientists who study memory, and the
+book condenses decades of research into one message: the study habits that feel productive
+(rereading, highlighting, cramming) fade fast, while the ones that feel harder last.
+The skill puts its techniques to work: retrieval practice, spacing, interleaving,
+generation, elaboration, reflection, calibration and desirable difficulties.
+
+Two other books fill in the gaps:
+
 - *Why Don't Students Like School?* by Daniel T. Willingham: memory is the residue of
   thought, facts before skill, concrete before abstract, working-memory limits.
 - *Ultralearning* by Scott H. Young: metalearning, directness, drill, retrieval, feedback,
@@ -39,8 +50,8 @@ Summaries of each book and how every idea maps to a coaching behavior are in
 Works with **Claude Code**, **Codex** and **OpenCode**.
 
 ```bash
-git clone https://github.com/<your-user>/learning.git
-cd learning
+git clone https://github.com/<your-user>/make-it-stick-skill.git
+cd make-it-stick-skill
 ./install.sh
 ```
 
@@ -75,7 +86,7 @@ switches on by itself when you say things like "teach me…", "help me learn…"
 ## Layout
 
 ```
-learning/
+make-it-stick-skill/
 ├── README.md
 ├── SKILL.md                      # the skill: instructions the agent follows
 ├── references/
