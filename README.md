@@ -52,7 +52,7 @@ Summaries of each book and how every idea maps to a coaching behavior are in
 Works with **Claude Code**, **Codex** and **OpenCode**.
 
 ```bash
-git clone https://github.com/<your-user>/mis-learning-skill.git
+git clone https://github.com/gold-chen-five/mis-learning-skill.git
 cd mis-learning-skill
 ./install.sh
 ```
