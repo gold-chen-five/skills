@@ -6,14 +6,13 @@ need.
 | Skill | What it does | Use |
 |---|---|---|
 | [learn](skills/learn) | Learning mode based on *Make It Stick*: a tutor that guides you to learn and build things yourself instead of handing over answers or finished code. | `/learn` |
-| [learn-off](skills/learn-off) | Switches learning mode off and goes back to direct answers. | `/learn-off` |
 
 ## Install
 
 ```bash
-bunx skills add gold-chen-five/skills --skill learn --skill learn-off
+bunx skills add gold-chen-five/skills --skill learn
 # or
-npx skills add gold-chen-five/skills --skill learn --skill learn-off
+npx skills add gold-chen-five/skills --skill learn
 ```
 
 That's it. It asks which tools to install for; pick Claude Code, Codex and/or OpenCode.
